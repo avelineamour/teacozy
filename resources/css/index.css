@@ -1,46 +1,60 @@
 
 
 body {
-  background-color: black;
-  font-family: "Europa-regular";
+  background-color: #d3dad0;
+  font-family: "Europa-light";
   font-size: 22px;
-  color: seashell;
+  color: #5f7d6b;
 }
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  height: 69px;
+  height: 210px;
   width: 100%;
   border-bottom: solid 1px seashell;
   position: fixed;
   z-index: 1;
-  background-color: black;
+  background-color: #5f7d6b;
   top: 0px;
+  left: 0px;
 }
 
 .logo {
-  flex-grow: 1;
+  flex-grow: ;
 }
 
 .logopic {
   height: 50px;
   width: auto;
-  padding-left: 10px;
+  margin-top: 25px;
 }
 
 .topnav {
   display: flex;
-  flex-direction: row;
-  padding-right: 50px;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 25%;
+  text-align: center;
+  font-size: 16px;
 
 }
+a:link {
+  color: #d3dad0;
+}
+a:visited {
+  color: #d3dad0;
+}
+a:hover {
+  color: white;
+}
+a:active {
+  color: #d3dad0;
+}
 
-.topnav span {
+.topnav p {
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: underline;
@@ -50,7 +64,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 20px 0px 20px;
+  padding: 130px 20px 0px 20px;
   opacity: .9;
 }
 
@@ -58,16 +72,21 @@ header {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
   height: 700px;
   width: 1200px;
   background-image: url("../images/img-mission-background.jpg");
   position: relative;
   top: 69px;
+
 }
 
 .section2 {
-  background-color: black;
+  background-color: #cdc6c4;
   text-align: center;
+  width: 80%;
+  opacity: .9
+
 }
 
 .main2 {
@@ -154,6 +173,7 @@ header {
   height: 500px;
   width: 1200px;
   background-image: url("../images/img-locations-background.jpg");
+
 }
 
 .downtown {
@@ -178,9 +198,11 @@ header {
 .downtown, .eastbayside, .oakdale {
   height: 300px;
   width: 300px;
-  background-color: black;
+  background-color: #cdc6c4;
   align-items: center;
   justify-content: space-around;
+  opacity: .7;
+
 
 }
 
@@ -204,4 +226,5 @@ footer {
 #copyright {
   text-align: left;
   padding: 0px 20px 20px 20px;
+  font-size: 12px;
 }
